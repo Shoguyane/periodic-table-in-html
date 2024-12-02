@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.tableau {
+  width: 90%;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.element {
+  aspect-ratio: 1 / 1;
+  border: #ffffff 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.vert-clair {
+  background-color: #3ad825;
+}
+
+.bleu-clair {
+  background-color: #06f1f8;
+}
+
+.rouge {
+  background-color: #f82e06 ;
+}
+
+.marron {
+  background-color: #ff8700 ;
+}
+
+.gris-clair{
+  background-color: #cacaca ;
+}
+
+.gris-foncé{
+  background-color: #8c8c8c ;
+}
