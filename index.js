@@ -343,7 +343,7 @@ let elements = {
     },
     "Rn": {
         "nom": "radon",
-        "image": "./image/radon.png"
+        "image": "./image/radon.mp4"
     },
     "Fr": {
         "nom": "francium",
@@ -478,6 +478,11 @@ let elements = {
 console.log(elements);
 
 function drawElement(element) {
+    if (element === "Rn"){
+        cadre.innerHTML = '<video controls autoplay width="600"><source src="./image/radon.mp4" type="video/mp4"></video>';
+        return;
+    }
+    
     cadre.innerHTML = '';
 
     const elementName = document.createElement('h3');
